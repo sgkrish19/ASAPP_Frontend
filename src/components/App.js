@@ -27,7 +27,7 @@ function App() {
 
   const fetchData = async () => {
     try {
-      const response = await fetch('http://localhost:4000/conversations');
+      const response = await fetch('http://54.146.255.17:4000/conversations');
       const data = await response.json();
       setDataList(data);
     } catch (error) {
