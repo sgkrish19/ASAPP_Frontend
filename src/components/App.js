@@ -3,7 +3,7 @@ import io from 'socket.io-client';
 import './App.css';
 import moment from 'moment';
 
-const socket = io.connect('http://localhost:4000'); // Connect to the WebSocket server
+const socket = io.connect('http://54.146.255.17:4000'); // Connect to the WebSocket server
 
 function App() {
   const [dataList, setDataList] = useState([]);
