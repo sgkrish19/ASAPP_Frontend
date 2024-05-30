@@ -1,0 +1,117 @@
+
+
+body{
+  background-image: url("https://cdn.pixabay.com/photo/2015/08/14/07/51/gradient-888106_640.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.8); /* Light background color with some transparency */
+  border-radius: 10px; /* Rounded corners */
+  padding: 80px; /* Padding inside the container */
+  margin: 75px auto; /* Center the container horizontally with some space around it */
+  max-width: 1100px; /* Limit the maximum width of the container */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-table th, .data-table td {
+  border: 1px solid #dddddd;
+  padding: 8px;
+}
+
+.data-table th {
+  background-color: palegreen;
+}
+
+.data-table tr:hover {
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+
+
+
+.custom-alert {
+  display: none;
+  position: fixed;
+  top: 32%; /* Adjust as needed */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  max-width: 100%; /* Adjust max-width for responsiveness */
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  z-index: 1000;
+  overflow-y: auto; /* Add vertical scrollbar */
+}
+
+.custom-alert-content {
+  position: relative;
+}
+
+.alert-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.alert-message {
+  font-size: 16px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.close-alert-btn {
+  position: absolute;
+  top: 2px;
+  right: 10px;
+  background-color: palegreen;
+  border: none;
+  padding: 8px 9px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.custom-alert table {
+  width: 100%;
+  max-height:80%;   
+  overflow-y: auto;
+  border-collapse: collapse;
+}
+
+.custom-alert th,
+.custom-alert td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+/* Adjust the widths of each column */
+.custom-alert th:nth-child(1),
+.custom-alert td:nth-child(1) {
+  width: 8%; 
+  /* Adjust the width of the first column */
+} 
+
+.custom-alert th:nth-child(2),
+.custom-alert td:nth-child(2) {
+  width: 8%; /* Adjust the width of the second column */
+} 
+
+ .custom-alert th:nth-child(3),
+.custom-alert td:nth-child(3) {
+  width: 15%; /* Adjust the width of the third column */
+}
+
+.custom-alert th:nth-child(4),
+.custom-alert td:nth-child(4) {
+  width: 40%; /* Adjust the width of the third column */
+}
+ 
