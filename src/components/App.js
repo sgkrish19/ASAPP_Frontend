@@ -3,7 +3,7 @@ import moment from 'moment';
 import io from 'socket.io-client';
 import './App.css';
  
-const socket = io.connect('http://localhost:4000');
+const socket = io.connect('http://54.146.255.17:4000');
  
 const App = () => {
   const [dataList, setDataList] = useState([]);
@@ -11,7 +11,7 @@ const App = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('http://localhost:4000/conversations');
+        const response = await fetch('http://54.146.255.17:4000/conversations');
         const data = await response.json();
         setDataList(data);
       } catch (error) {
