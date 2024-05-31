@@ -20,7 +20,7 @@ body{
 }
 
 .data-table th, .data-table td {
-  border: 1px solid #dddddd;
+  border: 1px solid palegreen;
   padding: 8px;
 }
 
@@ -38,13 +38,13 @@ body{
 .custom-alert {
   display: none;
   position: fixed;
-  top: 32%; /* Adjust as needed */
+  top: 29%; /* Adjust as needed */
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100vw;
   max-width: 100%; /* Adjust max-width for responsiveness */
   background-color: white;
-  padding: 20px;
+  padding: 50px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
   z-index: 1000;
@@ -54,13 +54,15 @@ body{
 .custom-alert-content {
   position: relative;
 }
-
-.alert-title {
+.custom-alert .alert-title {
   font-size: 20px;
   font-weight: bold;
   color: black;
   margin-bottom: 10px;
+  display: block;
+  text-align: center;
 }
+
 
 .alert-message {
   font-size: 16px;
@@ -70,11 +72,11 @@ body{
 
 .close-alert-btn {
   position: absolute;
-  top: 2px;
+  top: 335px;
   right: 10px;
   background-color: palegreen;
   border: none;
-  padding: 8px 9px;
+  padding: 8px 12px;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -82,7 +84,6 @@ body{
 .custom-alert table {
   width: 100%;
   max-height:80%;   
-  overflow-y: auto;
   border-collapse: collapse;
 }
 
@@ -91,6 +92,16 @@ body{
   border: 1px solid #ddd;
   padding: 8px;
   text-align: left;
+}
+
+.custom-alert th {
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+.custom-alert tr:hover {
+  background-color: #f2f2f2;
+  cursor: pointer;
 }
 
 /* Adjust the widths of each column */
@@ -115,3 +126,70 @@ body{
   width: 40%; /* Adjust the width of the third column */
 }
  
+
+.custom-alert-brief {
+  display: none;
+  position: fixed;
+  top: 25%; /* Adjusted position */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  max-width: 90%;
+  background-color: white;
+  padding: 50px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.custom-alert-brief .custom-alert-content {
+  position: relative;
+}
+
+.custom-alert-brief .alert-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 10px;
+  display: block;
+  text-align: center;
+}
+
+.custom-alert-brief .alert-message {
+  font-size: 16px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.custom-alert-brief .close-alert-btn {
+  position: absolute;
+  top: 270px;
+  right: 10px;
+  background-color: palegreen;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.custom-alert-brief table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.custom-alert-brief th,
+.custom-alert-brief td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.custom-alert-brief th {
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+.custom-alert-brief tr:hover {
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
