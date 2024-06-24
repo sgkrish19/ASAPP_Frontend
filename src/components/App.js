@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import moment from "moment";
 import io from "socket.io-client";
 import "./App.css";
+import { playBeepSound } from "./AudioUtils";
  
 const socket = io.connect("http://54.146.255.17:4000");
  
@@ -192,6 +193,7 @@ const App = () => {
   };
  
   const showAlert = (title, message, alertClass, onClose) => {
+    playBeepSound();
     const alertElement = document.getElementById(alertClass);
     if (!alertElement) return; // Check if the alert element exists
     alertElement.querySelector(".alert-title").innerText = title;
